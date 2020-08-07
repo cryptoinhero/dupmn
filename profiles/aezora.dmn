@@ -1,0 +1,9 @@
+COIN_NAME="aezora"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="aezorad"
+COIN_CLI="aezora-cli"
+COIN_FOLDER="/root/.aezora"
+COIN_CONFIG="aezora.conf"
+RPC_PORT=14724
+COIN_SERVICE="aezorad.service"
+FORCE_LISTEN=1

@@ -1,0 +1,9 @@
+COIN_NAME="eros"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="erosd"
+COIN_CLI="eros-cli"
+COIN_FOLDER="/root/.eros"
+COIN_CONFIG="eros.conf"
+RPC_PORT=18324
+COIN_SERVICE="erosd.service"
+FORCE_LISTEN=1

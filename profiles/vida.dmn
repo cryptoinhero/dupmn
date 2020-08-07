@@ -1,0 +1,9 @@
+COIN_NAME="vida"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="vidad"
+COIN_CLI="vida-cli"
+COIN_FOLDER="/root/.vida"
+COIN_CONFIG="vida.conf"
+RPC_PORT=20405
+COIN_SERVICE="vidad.service"
+FORCE_LISTEN=1
