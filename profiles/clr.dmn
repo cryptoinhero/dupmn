@@ -1,0 +1,9 @@
+COIN_NAME="clr"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="clrd"
+COIN_CLI="clr-cli"
+COIN_FOLDER="/root/.clr"
+COIN_CONFIG="clr.conf"
+RPC_PORT=32627
+COIN_SERVICE="clrd.service"
+FORCE_LISTEN=1
