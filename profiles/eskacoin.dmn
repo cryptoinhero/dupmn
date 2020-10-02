@@ -1,0 +1,9 @@
+COIN_NAME="eskacoin"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="eskacoind"
+COIN_CLI="eskacoin-cli"
+COIN_FOLDER="/root/.eskacoin"
+COIN_CONFIG="eskacoin.conf"
+RPC_PORT=14214
+COIN_SERVICE="eskacoind.service"
+FORCE_LISTEN=1
