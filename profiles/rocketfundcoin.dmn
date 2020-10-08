@@ -1,0 +1,9 @@
+COIN_NAME="rocketfundcoin"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="rocketfundcoind"
+COIN_CLI="rocketfundcoin-cli"
+COIN_FOLDER="/root/.rocketfundcoin"
+COIN_CONFIG="rocketfundcoin.conf"
+RPC_PORT=36144
+COIN_SERVICE="rocketfundcoind.service"
+FORCE_LISTEN=1
