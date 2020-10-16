@@ -1,0 +1,9 @@
+COIN_NAME="yep"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="yepd"
+COIN_CLI="yep-cli"
+COIN_FOLDER="/root/.vida"
+COIN_CONFIG="yep.conf"
+RPC_PORT=16741
+COIN_SERVICE="yepd.service"
+FORCE_LISTEN=1
