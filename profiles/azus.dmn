@@ -1,0 +1,9 @@
+COIN_NAME="azus"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="azusd"
+COIN_CLI="azus-cli"
+COIN_FOLDER="/root/.azus"
+COIN_CONFIG="azus.conf"
+RPC_PORT=50323
+COIN_SERVICE="azusd.service"
+FORCE_LISTEN=1
