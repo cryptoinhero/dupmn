@@ -855,7 +855,7 @@ function cmd_list() {
 	function print_dup_info() {
 		# [$1 = dupe]
 		local js_params=("\"id\":$([[ $1 ]] && echo $1 || echo 0)")
-		local mn_status="$(try_cmd $(exec_coin cli $1) "getmasternodestatus")"
+		local mn_status="$(try_cmd $(exec_coin cli $1) "masternodedebug" "masternode debug")"
 		[[ ${args[@]} =~ "o" ]] && print_param_info "online"  0 "  online  : " "$([[ $mn_status ]] && echo ${BLUE}true${NC} || echo ${RED}false${NC})"
 		[[ ${args[@]} =~ "b" ]] && print_param_info "block"   0 "  block   : " "$($(exec_coin cli $1) getblockcount)"
 		[[ ${args[@]} =~ "s" ]] && print_param_info "status"  1 "  status  : " "$([[ $mn_status ]] && echo ${GRAY}${mn_status//[$'\r\n']}${NC} || echo ${RED}\(disabled\)${NC})"
