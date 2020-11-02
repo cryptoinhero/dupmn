@@ -1,0 +1,10 @@
+  
+COIN_NAME="allforonebusiness"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="allforonebusinessd"
+COIN_CLI="allforonebusiness-cli"
+COIN_FOLDER="/root/.allforonebusiness"
+COIN_CONFIG="allforonebusiness.conf"
+RPC_PORT=11887
+COIN_SERVICE="allforonebusinessd.service"
+FORCE_LISTEN=1
