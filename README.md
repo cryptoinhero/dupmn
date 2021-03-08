@@ -74,6 +74,7 @@ dupmn profadd MCPCoin.dmn MCPCoin
 ```
 Now the MCPCoin profile is saved and the downloaded file can be removed if you want: `rm -rf MCPCoin.dmn` (you won't need to run the `profadd` command anymore for this coin).
 
+
 Let's create 3 extra instances (Note that you MUST already have installed the MCPCoin node in the VPS, the script cannot obtain the binaries from nowhere):
 ```
 dupmn install MCPCoin 
