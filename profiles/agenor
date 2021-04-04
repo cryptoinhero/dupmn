@@ -1,0 +1,9 @@
+COIN_NAME="agenor"
+COIN_PATH="/usr/local/bin/"
+COIN_DAEMON="agenord"
+COIN_CLI="agenor-cli"
+COIN_FOLDER="/root/.agenor"
+COIN_CONFIG="agenor.conf"
+RPC_PORT=32051
+COIN_SERVICE="agenord.service"
+FORCE_LISTEN=1
