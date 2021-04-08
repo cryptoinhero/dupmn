@@ -23,7 +23,7 @@ echo -e "\n===================================================\
          \n                                ╗ made by ${GREEN}risingstar2018${NC} ╔\
          \n           Source: ${CYAN}https://github.com/risingstar2018/dupmn${NC}\
          \n   FAQs: ${CYAN}https://github.com/risingstar2018/dupmn/wiki/FAQs${NC}\
-         \n  BTC Donations: ${YELLOW}3F6J19DmD5jowwwQbE9zxXoguGPVR716a7${NC}\
+         \n  BTC Donations: ${YELLOW}36wcFp7rTnucH3C2YjBzcLBS5rdPLqgCTe${NC}\
          \n===================================================\
          \n                                                   "
 
