@@ -141,8 +141,5 @@ A VPS doesn't have unlimited resources, creating too many instances may cause Ou
 
 ```
 BTC Donations:   36wcFp7rTnucH3C2YjBzcLBS5rdPLqgCTe
-ETH Donations:   0x7F9D6d654aEb3375A2974294a0911223d5d1DA52
-LTC Donations:   MToq5nZkGh9TWpfQAEjue8ERFcaz6GFB57
-DOGE Donations:  DK19TK7gex1j5gfJ5bebXcnCmwUjbhMHST
-MCPC Donations:  MCwe8WxWNmcZL1CpdpG3yuudGYVphmTSLE
+ETH Donations:   0xc2e143DF9633078Ba1317d2A60BA14F2F7f284d3
 ```
