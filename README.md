@@ -19,6 +19,12 @@ On your VPS type:
 ```
 curl -sL https://raw.githubusercontent.com/risingstar2018/dupmn/master/dupmn_install.sh | sudo -E bash -
 ```
+
+Add IPv6 simply
+```
+wget https://raw.githubusercontent.com/risingstar2018/dupmn/master/ipv6add.sh
+bash ipv6add.sh add <count> <ip> <netmask>
+```
 And that's all, the script is already installed.
 Check the [Usage example](#usage-example) to see the guide of the steps to follow.
 
