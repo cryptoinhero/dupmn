@@ -10,5 +10,6 @@ AEZORA     : wget -q https://raw.githubusercontent.com/risingstar2018/dupmn/mast
 EROS       : wget -q https://raw.githubusercontent.com/risingstar2018/dupmn/master/profiles/eros.dmn
 VIDA       : wget -q https://raw.githubusercontent.com/risingstar2018/dupmn/master/profiles/vida.dmn
 CLR        : wget -q https://raw.githubusercontent.com/risingstar2018/dupmn/master/profiles/clr.dmn
+RocketFund : wget -q https://raw.githubusercontent.com/risingstar2018/dupmn/master/profiles/rocketfundcoin.dmn
 ```
 Check [Profile Creation](https://github.com/risingstar2018/dupmn#-profile-creation) to create your own profiles.
