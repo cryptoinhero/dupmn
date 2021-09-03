@@ -20,14 +20,14 @@ echo -e "\n===================================================\
          \n   ${GRAY}██║  ██║██║   ██║██╔═══╝ ${NC}██║╚██╔╝██║██║╚██╗██║  \
          \n   ${GRAY}██████╔╝╚██████╔╝██║     ${NC}██║ ╚═╝ ██║██║ ╚████║  \
          \n   ${GRAY}╚═════╝  ╚═════╝ ╚═╝     ${NC}╚═╝     ╚═╝╚═╝  ╚═══╝  \
-         \n                                ╗ made by ${GREEN}risingstar2018${NC} ╔\
-         \n           Source: ${CYAN}https://github.com/risingstar2018/dupmn${NC}\
-         \n   FAQs: ${CYAN}https://github.com/risingstar2018/dupmn/wiki/FAQs${NC}\
+         \n                                ╗ made by ${GREEN}cryptoinhero${NC} ╔\
+         \n           Source: ${CYAN}https://github.com/cryptoinhero/dupmn${NC}\
+         \n   FAQs: ${CYAN}https://github.com/cryptoinhero/dupmn/wiki/FAQs${NC}\
          \n  BTC Donations: ${YELLOW}36wcFp7rTnucH3C2YjBzcLBS5rdPLqgCTe${NC}\
          \n===================================================\
          \n                                                   "
 
-dupmn_update=$(curl -s https://raw.githubusercontent.com/risingstar2018/dupmn/master/dupmn.sh)
+dupmn_update=$(curl -s https://raw.githubusercontent.com/cryptoinhero/dupmn/master/dupmn.sh)
 
 if [[ -f /usr/bin/dupmn && ! $(diff -q <(echo "$dupmn_update") /usr/bin/dupmn) ]]; then
 	echo_json_upd "${GREEN}dupmn${NC} is already updated to the last version" 0
