@@ -2,7 +2,7 @@
 
 A script to easily create and manage multiple masternodes of the same coin in the same VPS, can be easily adapted for almost any other coin by creating a [profile](#profile-creation).
 
-*Note: For any technical question not resolved in this readme, check <a href="https://github.com/risingstar2018/dupmn/wiki/FAQs">the FAQ</a>.*
+*Note: For any technical question not resolved in this readme, check <a href="https://github.com/cryptoinhero/dupmn/wiki/FAQs">the FAQ</a>.*
 
 # Index
 
@@ -17,12 +17,12 @@ A script to easily create and manage multiple masternodes of the same coin in th
 
 On your VPS type:
 ```
-curl -sL https://raw.githubusercontent.com/risingstar2018/dupmn/master/dupmn_install.sh | sudo -E bash -
+curl -sL https://raw.githubusercontent.com/cryptoinhero/dupmn/master/dupmn_install.sh | sudo -E bash -
 ```
 
 Add IPv6 simply
 ```
-wget https://raw.githubusercontent.com/risingstar2018/dupmn/master/ipv6add.sh
+wget https://raw.githubusercontent.com/cryptoinhero/dupmn/master/ipv6add.sh
 bash ipv6add.sh add <count> <ip> <netmask>
 ```
 And that's all, the script is already installed.
@@ -30,26 +30,26 @@ Check the [Usage example](#usage-example) to see the guide of the steps to follo
 
 # <a name ="commands"></a> Commands
 
-- [`dupmn profadd <profile_file> [new_profile_name]`](https://github.com/risingstar2018/dupmn/wiki/Commands#profadd) : Adds a profile with the given name that will be used to create dupes of the masternode.
-- [`dupmn profdel <profile_name>`](https://github.com/risingstar2018/dupmn/wiki/Commands#profdel) : Deletes the saved profile with the given name and uninstalls the dupes made with that profile.
-- [`dupmn install <profile_name> [params...]`](https://github.com/risingstar2018/dupmn/wiki/Commands#install) : Install a new dupe based on the parameters of the given profile name. Optional `[params]` list:  
+- [`dupmn profadd <profile_file> [new_profile_name]`](https://github.com/cryptoinhero/dupmn/wiki/Commands#profadd) : Adds a profile with the given name that will be used to create dupes of the masternode.
+- [`dupmn profdel <profile_name>`](https://github.com/cryptoinhero/dupmn/wiki/Commands#profdel) : Deletes the saved profile with the given name and uninstalls the dupes made with that profile.
+- [`dupmn install <profile_name> [params...]`](https://github.com/cryptoinhero/dupmn/wiki/Commands#install) : Install a new dupe based on the parameters of the given profile name. Optional `[params]` list:  
 `-i IP`, `--ip=IP` : Use a specific IPv4 or IPv6.  
 `-r RPC`, `--rpcport=RPC` : Use a specific port for RPC commands (must be valid and not in use).  
 `-p KEY`, `--privkey=KEY` : Set a user-defined masternode private key.  
 `-b`, `--bootstrap` : Apply a bootstrap during the installation.  
-- [`dupmn reinstall <profile_name> <node> [params...]`](https://github.com/risingstar2018/dupmn/wiki/Commands#reinstall) : Reinstalls the specified node number, this is just in case if the instance is giving problems. Optional `[params]` list:  
+- [`dupmn reinstall <profile_name> <node> [params...]`](https://github.com/cryptoinhero/dupmn/wiki/Commands#reinstall) : Reinstalls the specified node number, this is just in case if the instance is giving problems. Optional `[params]` list:  
 `-i IP`, `--ip=IP` : Use a specific IPv4 or IPv6.  
 `-r RPC`, `--rpcport=RPC` : Use a specific port for RPC commands (must be valid and not in use).  
 `-p KEY`, `--privkey=KEY` : Set a user-defined masternode private key.   
 `-b`, `--bootstrap` : Apply a bootstrap during the reinstallation.  
-- [`dupmn uninstall <profile_name> <node...|all>`](https://github.com/risingstar2018/dupmn/wiki/Commands#uninstall) : Uninstall one or many nodes dupes of the given profile name, you can put `all` instead of a node number to uninstall all the dupes.
-- [`dupmn bootstrap <profile_name> <node_1> <node_2>`](https://github.com/risingstar2018/dupmn/wiki/Commands#bootstrap) : Copies the stored chain from the node_1 to the node_2.
-- [`dupmn iplist`](https://github.com/risingstar2018/dupmn/wiki/Commands#iplist) : Shows your current IPv4 and IPv6 addresses.
-- [`dupmn ipadd <ip> <netmask> [interface]`](https://github.com/risingstar2018/dupmn/wiki/Commands#ipadd) : Adds an IPv4 or IPv6 address.
-- [`dupmn ipdel <ip> <netmask> [interface]`](https://github.com/risingstar2018/dupmn/wiki/Commands#ipdel) : Deletes an IPv4 or IPv6 address.
-- [`dupmn rpcchange <profile_name> <node> [port]`](https://github.com/risingstar2018/dupmn/wiki/Commands#rpcchange) : Changes the rpc port of the given node number, this is only in case that by chance it causes a conflict with another application that uses the same port (if no port is provided, it will automatically find any free port).
-- [`dupmn systemctlall <profile_name> <command>`](https://github.com/risingstar2018/dupmn/wiki/Commands#systemctlall) : Applies the systemctl command to all services created with the given profile (will only affect the main node too if the profile haves the COIN_SERVICE parameter).
-- [`dupmn list [profile_names...] [params...]`](https://github.com/risingstar2018/dupmn/wiki/Commands#list) : Shows the amount of duplicated instances of every masternode, if a profile name/s are provided, it lists an extended info of the profile/s instances. Optional `[params...]` list:  
+- [`dupmn uninstall <profile_name> <node...|all>`](https://github.com/cryptoinhero/dupmn/wiki/Commands#uninstall) : Uninstall one or many nodes dupes of the given profile name, you can put `all` instead of a node number to uninstall all the dupes.
+- [`dupmn bootstrap <profile_name> <node_1> <node_2>`](https://github.com/cryptoinhero/dupmn/wiki/Commands#bootstrap) : Copies the stored chain from the node_1 to the node_2.
+- [`dupmn iplist`](https://github.com/cryptoinhero/dupmn/wiki/Commands#iplist) : Shows your current IPv4 and IPv6 addresses.
+- [`dupmn ipadd <ip> <netmask> [interface]`](https://github.com/cryptoinhero/dupmn/wiki/Commands#ipadd) : Adds an IPv4 or IPv6 address.
+- [`dupmn ipdel <ip> <netmask> [interface]`](https://github.com/cryptoinhero/dupmn/wiki/Commands#ipdel) : Deletes an IPv4 or IPv6 address.
+- [`dupmn rpcchange <profile_name> <node> [port]`](https://github.com/cryptoinhero/dupmn/wiki/Commands#rpcchange) : Changes the rpc port of the given node number, this is only in case that by chance it causes a conflict with another application that uses the same port (if no port is provided, it will automatically find any free port).
+- [`dupmn systemctlall <profile_name> <command>`](https://github.com/cryptoinhero/dupmn/wiki/Commands#systemctlall) : Applies the systemctl command to all services created with the given profile (will only affect the main node too if the profile haves the COIN_SERVICE parameter).
+- [`dupmn list [profile_names...] [params...]`](https://github.com/cryptoinhero/dupmn/wiki/Commands#list) : Shows the amount of duplicated instances of every masternode, if a profile name/s are provided, it lists an extended info of the profile/s instances. Optional `[params...]` list:  
 `-a`, `--all` : Use all the available params below.  
 `-o`, `--online` : Show if the node is active or not.  
 `-b`, `--blockcount` : Show the current block number.  
@@ -57,13 +57,13 @@ Check the [Usage example](#usage-example) to see the guide of the steps to follo
 `-i`, `--ip` : Show the ip and port.  
 `-r`, `--rpcport` : Show the rpc port.  
 `-p`, `--privkey` : Show the masternode private key.  
-- [`dupmn swapfile <size_in_mbytes>`](https://github.com/risingstar2018/dupmn/wiki/Commands#swapfile) : Creates/changes or deletes (if value is 0) a swapfile to increase the virtual memory, allowing to fit more masternodes in the same VPS, recommended size is 150 MB for each masternode (example: 3 masternodes => `dupmn swapfile 450`), note that some masternodes might be more 'RAM hungry'.
-- [`dupmn checkmem`](https://github.com/risingstar2018/dupmn/wiki/Commands#checkmem) : Shows the RAM usage (in %) of each node group.
-- [`dupmn help`](https://github.com/risingstar2018/dupmn/wiki/Commands#help) : Just shows the available commands in the console.
-- [`dupmn update`](https://github.com/risingstar2018/dupmn/wiki/Commands#update) : Checks the last version of the script and updates it if necessary.
+- [`dupmn swapfile <size_in_mbytes>`](https://github.com/cryptoinhero/dupmn/wiki/Commands#swapfile) : Creates/changes or deletes (if value is 0) a swapfile to increase the virtual memory, allowing to fit more masternodes in the same VPS, recommended size is 150 MB for each masternode (example: 3 masternodes => `dupmn swapfile 450`), note that some masternodes might be more 'RAM hungry'.
+- [`dupmn checkmem`](https://github.com/cryptoinhero/dupmn/wiki/Commands#checkmem) : Shows the RAM usage (in %) of each node group.
+- [`dupmn help`](https://github.com/cryptoinhero/dupmn/wiki/Commands#help) : Just shows the available commands in the console.
+- [`dupmn update`](https://github.com/cryptoinhero/dupmn/wiki/Commands#update) : Checks the last version of the script and updates it if necessary.
 
 *Note: `<parameter>` means required, `[parameter]` means optional, `parameter...` means 1 or more parameters, `param1|param2` means either param1 or param2, all `node` are always a number that refers to a dupe (0 is the main node and is allowed in some commands)*  
-*Note 2: Check the [Commands Page](https://github.com/risingstar2018/dupmn/wiki/Commands) for extended info and usage examples of each command.*
+*Note 2: Check the [Commands Page](https://github.com/cryptoinhero/dupmn/wiki/Commands) for extended info and usage examples of each command.*
 
 # <a name ="usage-example"></a> Usage example
 
@@ -71,11 +71,11 @@ Usage example based on the MCPCoin profile:
 
 First install the dupmn script (only needs to be done once):
 ``` 
-curl -sL https://raw.githubusercontent.com/risingstar2018/dupmn/master/dupmn_install.sh | sudo -E bash -
+curl -sL https://raw.githubusercontent.com/cryptoinhero/dupmn/master/dupmn_install.sh | sudo -E bash -
 ``` 
-Then add the coin profile (if the profile doesn't exists in the [profiles folder](https://github.com/risingstar2018/dupmn/tree/master/profiles), then check [Profile creation](#profile-creation)):
+Then add the coin profile (if the profile doesn't exists in the [profiles folder](https://github.com/cryptoinhero/dupmn/tree/master/profiles), then check [Profile creation](#profile-creation)):
 ```
-wget -q https://raw.githubusercontent.com/risingstar2018/dupmn/master/profiles/MCPCoin.dmn
+wget -q https://raw.githubusercontent.com/cryptoinhero/dupmn/master/profiles/MCPCoin.dmn
 dupmn profadd MCPCoin.dmn MCPCoin
 ```
 Now the MCPCoin profile is saved and the downloaded file can be removed if you want: `rm -rf MCPCoin.dmn` (you won't need to run the `profadd` command anymore for this coin).
