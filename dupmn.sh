@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Author: risingstar2018
-# Source: https://github.com/risingstar2018/dupmn
+# Author: cryptoinhero
+# Source: https://github.com/cryptoinhero/dupmn
 
 # TODO:
 # - AUTO_IPV6=1 => auto choose/add a IPv6 when creating on dupmn install
@@ -1021,11 +1021,11 @@ function cmd_help() {
 			\n  - ${YELLOW}dupmn swapfile <size_in_mbytes>                ${NC}Creates, changes or deletes (if parameter is ${CYAN}0${NC}) a swapfile of the given size in MB to increase the virtual memory.\
 			\n  - ${YELLOW}dupmn update                                   ${NC}Checks the last version of the script and updates it if necessary.\
 			\n**NOTE 1**: ${YELLOW}<parameter>${NC} means required, ${YELLOW}[parameter]${NC} means optional, ${YELLOW}node${NC} is always a number that refers to a dupe (${CYAN}0${NC} is the main node).\
-			\n**NOTE 2**: Check ${CYAN}https://github.com/risingstar2018/dupmn/wiki/Commands${NC} for extended info and usage examples of each command.\
-			\n**NOTE 3**: Check ${CYAN}https://github.com/risingstar2018/dupmn/wiki/FAQs${NC} for technical questions and troubleshooting."
+			\n**NOTE 2**: Check ${CYAN}https://github.com/cryptoinhero/dupmn/wiki/Commands${NC} for extended info and usage examples of each command.\
+			\n**NOTE 3**: Check ${CYAN}https://github.com/cryptoinhero/dupmn/wiki/FAQs${NC} for technical questions and troubleshooting."
 }
 function cmd_update() {
-	curl -sL https://raw.githubusercontent.com/risingstar2018/dupmn/master/dupmn_install.sh 3>&3 | bash
+	curl -sL https://raw.githubusercontent.com/cryptoinhero/dupmn/master/dupmn_install.sh 3>&3 | bash
 	exit
 }
 
